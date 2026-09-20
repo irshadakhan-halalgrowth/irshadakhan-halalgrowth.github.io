@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halal Growth — Islamic Finance for SME & Commercial Banking</title>
+<meta name="description" content="Halal Growth by Irshad Ahmad Khan — practical, Shariah-aligned frameworks, credit toolkits, and handbooks for SME and commercial banking professionals in Pakistan and beyond.">
+<meta name="keywords" content="Islamic finance, halal banking, SME finance, Shariah compliant banking, commercial banking Pakistan, credit analysis toolkit, Islamic banking handbook, SME credit appraisal">
+<meta name="author" content="Irshad Ahmad Khan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://irshadakhan-halalgrowth.github.io/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://irshadakhan-halalgrowth.github.io/">
+<meta property="og:title" content="Halal Growth — Islamic Finance for SME & Commercial Banking">
+<meta property="og:description" content="Practical, Shariah-aligned frameworks, credit toolkits, and handbooks for SME and commercial banking professionals — from 25+ years on the credit desk.">
+<meta property="og:image" content="https://irshadakhan-halalgrowth.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Halal Growth">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Halal Growth — Islamic Finance for SME & Commercial Banking">
+<meta name="twitter:description" content="Practical, Shariah-aligned frameworks, credit toolkits, and handbooks for SME and commercial banking professionals.">
+<meta name="twitter:image" content="https://irshadakhan-halalgrowth.github.io/og-image.png">
+
+<!-- Google Search Console verification — paste your tag on the line below -->
+<!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" /> -->
+
+<!-- Structured Data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Halal Growth",
+  "url": "https://irshadakhan-halalgrowth.github.io/",
+  "logo": "https://irshadakhan-halalgrowth.github.io/logo-512.png",
+  "description": "Islamic finance resources, credit toolkits, and handbooks for SME and commercial banking professionals.",
+  "founder": {
+    "@type": "Person",
+    "name": "Irshad Ahmad Khan",
+    "jobTitle": "Unit Head – SME",
+    "sameAs": "https://www.linkedin.com/in/irshadkhan9215l"
+  },
+  "areaServed": "Pakistan",
+  "knowsAbout": ["Islamic Banking", "SME Finance", "Commercial Banking", "Shariah-Compliant Finance", "Credit Analysis"]
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root{
+    --navy: #0A1B3F;
+    --navy-soft: #12295E;
+    --gold: #D9A62A;
+    --gold-soft: #F4CD5C;
+    --green: #0E7A55;
+    --green-bright: #14A876;
+    --cream: #F8F1DE;
+    --paper: #FEFCF8;
+    --ink: #1C2333;
+    --ink-soft: #4A5268;
+    --line: rgba(14,27,51,0.12);
+    --maxw: 1120px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{ font-family:'Fraunces', serif; font-weight:600; color:var(--navy); letter-spacing:-0.01em;}
+  a{ color:inherit; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 28px; }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--green);
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{ content:''; width:18px; height:1px; background:var(--gold); display:inline-block;}
+
+  /* NAV */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(253,251,246,0.88);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:72px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Fraunces', serif; font-weight:600; font-size:19px; color:var(--navy); }
+  .brand .mark{ width:26px; height:26px; }
+  nav ul{ list-style:none; display:flex; gap:34px; font-size:14.5px; font-weight:500; }
+  nav ul a{ text-decoration:none; color:var(--ink-soft); transition:color .2s;}
+  nav ul a:hover{ color:var(--navy); }
+  .nav-cta{
+    background:var(--navy); color:var(--paper); padding:10px 18px; border-radius:3px;
+    font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;
+  }
+  .nav-links{ display:flex; align-items:center; gap:34px; }
+  .burger{ display:none; background:none; border:none; cursor:pointer; padding:6px; }
+  .burger span{ display:block; width:22px; height:2px; background:var(--navy); margin:5px 0; }
+
+  /* HERO */
+  .hero{
+    position:relative; overflow:hidden;
+    background: radial-gradient(ellipse 900px 600px at 85% 15%, rgba(20,168,118,0.18), transparent 60%),
+                linear-gradient(155deg, var(--navy) 0%, var(--navy-soft) 65%, #0D2452 100%);
+    color:var(--paper);
+    padding: 96px 0 0px;
+  }
+  .hero .wrap{ position:relative; z-index:2; display:grid; grid-template-columns: 1.05fr 0.95fr; gap:40px; align-items:center; padding-bottom:60px;}
+  .hero-eyebrow{ color: var(--gold-soft); }
+  .hero-eyebrow::before{ background:var(--gold-soft); }
+  .hero h1{
+    color:var(--paper);
+    font-size: clamp(38px, 5vw, 58px);
+    line-height:1.06;
+    margin: 18px 0 22px;
+    max-width: 14ch;
+  }
+  .hero h1 em{ font-style:italic; color:var(--gold-soft); }
+  .hero p.lede{
+    color: rgba(247,243,232,0.78);
+    font-size:17px; max-width:46ch; margin-bottom:30px;
+  }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 24px; border-radius:3px; font-weight:600; font-size:14.5px;
+    text-decoration:none; cursor:pointer; border:1px solid transparent; transition: all .2s;
+  }
+  .btn-gold{ background: linear-gradient(135deg, var(--gold-soft), var(--gold)); color:var(--navy); box-shadow: 0 6px 20px rgba(217,166,42,0.28); }
+  .btn-gold:hover{ background: var(--gold-soft); box-shadow: 0 8px 26px rgba(217,166,42,0.4); transform: translateY(-1px); }
+  .btn-ghost{ border-color: rgba(247,243,232,0.35); color:var(--paper); }
+  .btn-ghost:hover{ border-color: var(--gold-soft); color:var(--gold-soft); }
+
+  .hero-figure{ position:relative; height:420px; }
+  .credentials{
+    position:absolute; bottom:0; left:0; right:0;
+    display:flex; gap:0; border-top:1px solid rgba(247,243,232,0.15);
+    background: rgba(255,255,255,0.03);
+  }
+  .credentials .wrap{ padding:22px 0; display:flex; gap:0; }
+  .cred{ flex:1; padding: 0 28px; border-left:1px solid rgba(247,243,232,0.12); }
+  .cred:first-child{ border-left:none; padding-left:0;}
+  .cred .num{ font-family:'Fraunces', serif; font-size:26px; background: linear-gradient(135deg, var(--gold-soft), var(--green-bright)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .cred .lbl{ font-size:12.5px; color:rgba(247,243,232,0.62); margin-top:4px; }
+
+  /* SIGNATURE: growth lattice */
+  .lattice-svg{ width:100%; height:100%; }
+  .lattice-line{
+    fill:none; stroke:var(--gold-soft); stroke-width:1.6; opacity:0.95;
+    stroke-dasharray: 900; stroke-dashoffset:900;
+    animation: draw 2.4s ease-out forwards;
+  }
+  .lattice-line.d2{ stroke:var(--green-bright); opacity:0.7; animation-delay:.3s; }
+  .lattice-line.d3{ stroke: rgba(247,243,232,0.4); animation-delay:.6s; }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  .lattice-dot{ fill:var(--gold); opacity:0; animation: pop .5s ease-out forwards; }
+  @keyframes pop{ to{ opacity:1; } }
+
+  @media (prefers-reduced-motion: reduce){
+    .lattice-line{ stroke-dashoffset:0; animation:none; }
+    .lattice-dot{ opacity:1; animation:none; }
+  }
+
+  /* SECTIONS */
+  section{ padding: 88px 0; }
+  .section-head{ max-width:640px; margin-bottom:48px; }
+  .section-head h2{ font-size: clamp(28px,3.4vw,38px); margin-top:14px; line-height:1.15; }
+  .section-head p{ color:var(--ink-soft); margin-top:14px; font-size:16px; }
+
+  /* ABOUT */
+  .about{ background:var(--cream); }
+  .about-grid{ display:grid; grid-template-columns: 0.9fr 1.1fr; gap:56px; align-items:start; }
+  .about-quote{
+    font-family:'Fraunces', serif; font-style:italic; font-size:22px; color:var(--navy);
+    border-left: 3px solid var(--gold); padding-left:24px; line-height:1.5;
+  }
+  .about-list{ list-style:none; margin-top:28px; }
+  .about-list li{
+    display:flex; gap:14px; padding:16px 0; border-top:1px solid var(--line);
+    font-size:15px; color:var(--ink-soft);
+  }
+  .about-list li:last-child{ border-bottom:1px solid var(--line); }
+  .about-list .tag{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--green);
+    flex:0 0 auto; padding-top:2px;
+  }
+
+  /* PRODUCTS */
+  .products-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:24px; }
+  .card{
+    background:var(--paper); border:1px solid var(--line); border-radius:4px;
+    padding:32px 26px; display:flex; flex-direction:column; height:100%;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .card:hover{ transform: translateY(-4px); box-shadow: 0 16px 40px rgba(14,27,51,0.08); }
+  .card .tagline{
+    font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:16px;
+  }
+  .card h3{ font-size:20px; margin-bottom:12px; line-height:1.3; }
+  .card p{ color:var(--ink-soft); font-size:14.5px; flex-grow:1; margin-bottom:22px; }
+  .card a.link{
+    font-weight:600; font-size:14px; color:var(--navy); text-decoration:none;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .card a.link:hover{ color:var(--green); }
+
+  /* SERVICES */
+  .services{ background:var(--navy); color:var(--paper); }
+  .services .section-head h2{ color:var(--paper); }
+  .services .section-head p{ color:rgba(247,243,232,0.65); }
+  .services .eyebrow{ color:var(--gold-soft); }
+  .services .eyebrow::before{ background:var(--gold-soft); }
+  .service-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:1px; background:rgba(247,243,232,0.12); border:1px solid rgba(247,243,232,0.12); }
+  .service{ background:var(--navy); padding:30px 28px; }
+  .service h3{ color:var(--paper); font-size:18px; margin-bottom:10px; }
+  .service p{ color:rgba(247,243,232,0.62); font-size:14.5px; }
+
+  /* NEWSLETTER */
+  .newsletter{ background:var(--cream); }
+  .nl-box{
+    background:var(--paper); border:1px solid var(--line); border-radius:6px;
+    padding:52px; display:grid; grid-template-columns: 1.1fr 0.9fr; gap:40px; align-items:center;
+  }
+  .nl-box h2{ font-size:28px; margin-bottom:12px; }
+  .nl-box p{ color:var(--ink-soft); font-size:15px; }
+  .nl-form{ display:flex; gap:10px; margin-top:8px; }
+  .nl-form input{
+    flex:1; padding:14px 16px; border:1px solid var(--line); border-radius:3px;
+    font-family:'Inter', sans-serif; font-size:14.5px; background:var(--paper);
+  }
+  .nl-form input:focus{ outline:2px solid var(--gold); outline-offset:1px; }
+  .nl-note{ font-size:12.5px; color:var(--ink-soft); margin-top:10px; }
+  .issue-list{ list-style:none; }
+  .issue-list li{
+    display:flex; justify-content:space-between; padding:12px 0; border-top:1px solid var(--line);
+    font-size:14px;
+  }
+  .issue-list li:last-child{ border-bottom:1px solid var(--line); }
+  .issue-list .n{ font-family:'IBM Plex Mono', monospace; color:var(--green); margin-right:10px; }
+
+  /* FOOTER */
+  footer{ background:var(--navy); color:rgba(247,243,232,0.55); padding:48px 0 32px; }
+  .footer-top{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px; padding-bottom:32px; border-bottom:1px solid rgba(247,243,232,0.12); }
+  footer .brand{ color:var(--paper); }
+  .footer-links{ display:flex; gap:28px; list-style:none; font-size:14px; }
+  .footer-links a{ text-decoration:none; color:rgba(247,243,232,0.65); }
+  .footer-links a:hover{ color:var(--gold-soft); }
+  .footer-bottom{ padding-top:24px; display:flex; justify-content:space-between; font-size:12.5px; flex-wrap:wrap; gap:12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px){
+    nav .nav-links{ display:none; }
+    .burger{ display:block; }
+    .hero .wrap{ grid-template-columns:1fr; }
+    .hero-figure{ height:260px; }
+    .about-grid{ grid-template-columns:1fr; }
+    .products-grid{ grid-template-columns:1fr; }
+    .service-grid{ grid-template-columns:1fr; }
+    .nl-box{ grid-template-columns:1fr; padding:32px 24px; }
+    .nl-form{ flex-direction:column; }
+    .credentials .wrap{ flex-wrap:wrap; }
+    .cred{ flex:1 1 40%; border-left:none; padding:12px 0; }
+  }
+</style>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1DRP9RK86"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N1DRP9RK86');
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 26 26" fill="none">
+        <path d="M13 2 L23 13 L13 24 L3 13 Z" stroke="#C9A24B" stroke-width="1.6"/>
+        <path d="M13 8 L18 13 L13 18 L8 13 Z" fill="#1F4D3C"/>
+      </svg>
+      Halal Growth
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+      <a class="nav-cta" href="https://irshadkhan92.gumroad.com" target="_blank" rel="noopener">Visit Store</a>
+    </div>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display = document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow hero-eyebrow">Islamic Finance for SME &amp; Commercial Banking</div>
+      <h1>Growth that stays <em>within the lines</em> of Shariah.</h1>
+      <p class="lede">Practical frameworks, credit tools, and plain-language guidance for bankers and SME owners who want their financing decisions to be sound — and halal — from the first ratio to the final signature.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#newsletter">Subscribe to the newsletter</a>
+        <a class="btn btn-ghost" href="#resources">Browse the toolkits</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <svg class="lattice-svg" viewBox="0 0 400 420" preserveAspectRatio="xMidYMid meet">
+        <!-- geometric star lattice that also reads as an ascending growth line -->
+        <polyline class="lattice-line" points="20,380 90,340 90,260 160,220 160,140 230,100 230,60 300,20" />
+        <polyline class="lattice-line d2" points="60,400 60,300 130,260 130,180 200,140 200,80 270,40 340,10" />
+        <polyline class="lattice-line d3" points="10,300 80,300 80,220 150,220 150,140 220,140 220,60 290,60" />
+        <g>
+          <circle class="lattice-dot" style="animation-delay:1.6s" cx="90" cy="260" r="3.5"/>
+          <circle class="lattice-dot" style="animation-delay:1.8s" cx="160" cy="140" r="3.5"/>
+          <circle class="lattice-dot" style="animation-delay:2s" cx="230" cy="60" r="3.5"/>
+          <circle class="lattice-dot" style="animation-delay:2.2s" cx="300" cy="20" r="4.5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="credentials">
+    <div class="wrap">
+      <div class="cred"><div class="num">25+</div><div class="lbl">Years in SME &amp; commercial credit</div></div>
+      <div class="cred"><div class="num">Rs. 8B</div><div class="lbl">Portfolio managed, 34 branches</div></div>
+      <div class="cred"><div class="num">3</div><div class="lbl">Published banking handbooks</div></div>
+      <div class="cred"><div class="num">02</div><div class="lbl">Newsletter issues &amp; counting</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">About</div>
+      <h2>Written from the credit desk, not the classroom.</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p class="about-quote">"Every SME financing decision sits at the intersection of numbers and niyyah — the ratios have to work, and the structure has to be halal."</p>
+      </div>
+      <div>
+        <p style="color:var(--ink-soft); font-size:15.5px;">Irshad Ahmad Khan is a Unit Head – SME at a leading Pakistani bank, with a career spanning conventional and Islamic banking across commercial, agricultural, and SME credit. Halal Growth distills that field experience into tools any banker, credit officer, or SME owner can actually use.</p>
+        <ul class="about-list">
+          <li><span class="tag">NOW</span><span>Unit Head – SME at a leading bank of Pakistan, managing a Rs. 8 billion portfolio across 34 branches</span></li>
+          <li><span class="tag">FOCUS</span><span>Shariah-compliant SME &amp; commercial credit structuring, financial statement analysis, DSCR frameworks</span></li>
+          <li><span class="tag">BACKGROUND</span><span>25+ years across conventional and Islamic banking institutions in Pakistan</span></li>
+          <li><span class="tag">CREDENTIALS</span><span>CFI certifications, NFLP Field Trainer (SBP BSC)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Toolkits &amp; Handbooks</div>
+      <h2>Frameworks built for the desk, not the shelf.</h2>
+      <p>Each resource is built from real appraisal work — structured so you can apply it to a live file the same day.</p>
+    </div>
+    <div class="products-grid">
+      <div class="card">
+        <div class="tagline">Credit Toolkit</div>
+        <h3>SME Credit Analysis &amp; Appraisal Toolkit</h3>
+        <p>A working framework for assessing SME creditworthiness — ratios, red flags, and a structured appraisal checklist you can apply file by file.</p>
+        <a class="link" href="https://irshadkhan92.gumroad.com" target="_blank" rel="noopener">View on Gumroad →</a>
+      </div>
+      <div class="card">
+        <div class="tagline">Islamic Finance</div>
+        <h3>Islamic Banking &amp; Finance Handbook</h3>
+        <p>A practitioner's guide to Shariah-compliant modes of financing, grounded in established scholarly positions and everyday banking practice.</p>
+        <a class="link" href="https://irshadkhan92.gumroad.com" target="_blank" rel="noopener">View on Gumroad →</a>
+      </div>
+      <div class="card">
+        <div class="tagline">Reference Sheet</div>
+        <h3>Financial Ratios &amp; Statement Analysis Cheat Sheet</h3>
+        <p>Every ratio a credit officer actually reaches for, with plain-language interpretation notes — built for quick reference during appraisal.</p>
+        <a class="link" href="https://irshadkhan92.gumroad.com" target="_blank" rel="noopener">View on Gumroad →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Work With Irshad</div>
+      <h2>Banking expertise, freelance-ready.</h2>
+      <p>Beyond the desk — direct support for institutions and businesses that need financial expertise on a project basis.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service">
+        <h3>SME Credit Analysis</h3>
+        <p>Independent appraisal and financial statement review for SME lending files, structured for quick lender decision-making.</p>
+      </div>
+      <div class="service">
+        <h3>Urdu–English Financial Translation</h3>
+        <p>Accurate, terminology-correct translation of banking, credit, and financial documents between Urdu and English.</p>
+      </div>
+      <div class="service">
+        <h3>Islamic Finance Content &amp; Writing</h3>
+        <p>Articles, handbooks, and training material on Shariah-compliant banking, written for practitioners and clients alike.</p>
+      </div>
+      <div class="service">
+        <h3>Banking CV &amp; Profile Writing</h3>
+        <p>CVs and LinkedIn profiles for banking and finance professionals, built to read credibly to hiring managers in the sector.</p>
+      </div>
+    </div>
+    <div style="margin-top:32px; padding-top:32px; border-top:1px solid rgba(247,243,232,0.12); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <p style="color:rgba(247,243,232,0.7); font-size:15px;">Have a project in mind? Reach out directly.</p>
+      <a class="btn btn-gold" href="mailto:halalgrowth.iak@gmail.com">halalgrowth.iak@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter" id="newsletter">
+  <div class="wrap">
+    <div class="nl-box">
+      <div>
+        <div class="eyebrow">The Newsletter</div>
+        <h2>Halal Growth, in your inbox.</h2>
+        <p>Short, practical issues on Islamic finance for SME and commercial banking — real scenarios, not theory. Published on LinkedIn.</p>
+        <form class="nl-form" onsubmit="event.preventDefault(); window.open('https://www.linkedin.com/in/irshadkhan9215l', '_blank');">
+          <input type="email" placeholder="you@bank.com" required aria-label="Email address">
+          <button class="btn btn-gold" type="submit">Follow on LinkedIn</button>
+        </form>
+        <p class="nl-note">Opens LinkedIn — subscribe to the Halal Growth newsletter there to get each issue.</p>
+      </div>
+      <div>
+        <ul class="issue-list">
+          <li><span><span class="n">01</span>Foundations of Halal Growth</span></li>
+          <li><span><span class="n">02</span>Common SME Financing Mistakes</span></li>
+          <li style="color:var(--ink-soft);"><span><span class="n">03</span>Coming soon</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="brand">Halal Growth</div>
+        <p style="margin-top:8px; max-width:36ch; font-size:14px;">Islamic finance for SME &amp; commercial banking, from Irshad Ahmad Khan.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://irshadkhan92.gumroad.com" target="_blank" rel="noopener">Gumroad Store</a></li>
+        <li><a href="https://www.linkedin.com/in/irshadkhan9215l" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:halalgrowth.iak@gmail.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Irshad Ahmad Khan. All rights reserved.</span>
+      <span>Multan, Pakistan</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
