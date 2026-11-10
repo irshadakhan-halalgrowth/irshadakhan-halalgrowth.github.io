@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Why SME Loans Get Rejected in Pakistan — a Banker’s Inside View — Halal Growth</title>
+<meta name="description" content="Banks rarely explain a declined SME loan. After over 25 years of SME banking, here are the real reasons files are rejected — undocumented sales, tax returns that contradict the application, thin cash flow, e-CIB marks, defective titles — and the year-before checklist that fixes them." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F4EF;
+  --surface:#FFFFFF;
+  --surface-2:#EDF2EE;
+  --surface-3:#E6EDE8;
+  --ink:#14211B;
+  --ink-2:#2E4238;
+  --muted:#5E7268;
+  --line:#D9E0D8;
+  --emerald:#0B4A33;
+  --emerald-2:#117A55;
+  --emerald-dark:#072E20;
+  --gold:#B7892E;
+  --gold-2:#8A6518;
+  --gold-bg:#FBF3D9;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(11,74,51,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0D1411;
+    --surface:#16211B;
+    --surface-2:#1B2A22;
+    --surface-3:#22352B;
+    --ink:#EDF3EF;
+    --ink-2:#C9D8CE;
+    --muted:#9DB0A4;
+    --line:#2B3F34;
+    --emerald:#35C48D;
+    --emerald-2:#4ED3A3;
+    --emerald-dark:#0B2E21;
+    --gold:#E2B44A;
+    --gold-2:#E2B44A;
+    --gold-bg:#2E2A12;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--emerald);text-decoration-color:color-mix(in srgb, var(--emerald) 40%, transparent);text-underline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px 56px}
+
+/* Top strip */
+.topstrip{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.mark{width:44px;height:44px;border-radius:11px;background:var(--emerald);color:#fff;display:grid;place-items:center;font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:19px;letter-spacing:.02em;flex:none}
+@media (prefers-color-scheme: dark){.mark{color:#072E20}}
+.brand b{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink)}
+.brand span{display:block;font-size:12.5px;color:var(--muted);letter-spacing:0;text-transform:none;font-weight:400}
+.top-link{font-size:13.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);padding:9px 14px;border-radius:999px;text-decoration:none;color:var(--ink)}
+.top-link:hover{border-color:var(--emerald)}
+
+/* Article */
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold-2)}
+.article{max-width:760px;margin:34px auto 0}
+.article h1{font-family:"Newsreader",Georgia,serif;font-size:40px;line-height:1.12;letter-spacing:-.02em;margin:10px 0 22px;font-weight:700}
+.article .standfirst{font-family:"Newsreader",Georgia,serif;font-style:italic;font-size:22px;line-height:1.45;color:var(--ink-2);margin:0 0 26px;padding-left:18px;border-left:3px solid var(--gold)}
+.article p{font-size:16.5px;line-height:1.8;color:var(--ink-2);margin:0 0 20px}
+.article strong{color:var(--ink)}
+.article h2{font-family:"Newsreader",Georgia,serif;font-size:28px;line-height:1.2;letter-spacing:-.01em;margin:38px 0 14px;color:var(--ink)}
+.article h3{font-size:19px;line-height:1.35;font-weight:700;margin:30px 0 10px;color:var(--ink)}
+.article hr{border:0;height:1px;background:var(--line);margin:34px 0}
+.article ul{margin:0 0 20px;padding-left:22px}
+.article li{font-size:16.5px;line-height:1.75;color:var(--ink-2);margin-bottom:8px}
+.article li strong{color:var(--ink)}
+
+/* Comparison table */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:24px 0 26px;background:var(--surface);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;background:var(--surface-2);padding:12px 14px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td{padding:12px 14px;border-top:1px solid var(--line);font-family:"IBM Plex Mono",monospace;color:var(--ink-2)}
+td:first-child{font-family:"IBM Plex Sans",sans-serif;font-weight:600;color:var(--ink)}
+th.num, td.num{text-align:right}
+
+/* Checklist */
+.checklist{list-style:none;margin:6px 0 26px;padding:0;display:grid;gap:12px;counter-reset:q}
+.checklist li{display:flex;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;font-size:15.5px;line-height:1.7;color:var(--ink-2);margin:0}
+.checklist li::before{counter-increment:q;content:counter(q);width:26px;height:26px;flex:none;border-radius:50%;background:var(--emerald);color:#fff;display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:700;margin-top:3px}
+@media (prefers-color-scheme: dark){.checklist li::before{color:#072E20}}
+.checklist li strong{color:var(--ink)}
+
+/* Calculator callout */
+.callout{background:var(--emerald-dark);color:#EAF6EF;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin:30px 0 8px}
+.callout h3{margin:0 0 6px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E9C86B;font-family:"IBM Plex Sans",sans-serif;font-weight:700}
+.callout p{margin:0 0 16px;font-size:15px;color:#CDE8D8;line-height:1.65}
+.callout .cta{display:inline-block;background:#E9C86B;color:#072E20;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;text-decoration:none}
+.callout .cta:hover{filter:brightness(1.05)}
+
+/* Disclaimer + footer */
+.disclaimer{background:var(--gold-bg);border:1px solid color-mix(in srgb, var(--gold) 28%, var(--line));border-radius:14px;padding:18px 20px;font-size:13.5px;color:var(--ink-2);line-height:1.65;max-width:760px;margin:34px auto 0}
+.disclaimer strong{color:var(--gold-2)}
+footer{margin:28px auto 0;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13px;max-width:760px}
+@media (max-width:620px){
+  .wrap{padding:0 14px 44px}
+  .article h1{font-size:31px}
+  .article .standfirst{font-size:19px}
+  .article p,.article li{font-size:15.5px}
+  .checklist li{font-size:14.5px;padding:15px}
+  table{font-size:12.5px}
+  th,td{padding:10px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topstrip">
+    <a class="brand" href="../" aria-label="Halal Growth — home">
+      <div class="mark" aria-hidden="true">HG</div>
+      <div><b>Halal Growth</b><span>By Irshad Ahmad Khan — SME &amp; Islamic Banking, Multan</span></div>
+    </a>
+    <a class="top-link" href="../tools/">Tools</a>
+  </div>
+
+  <article class="article">
+    <div class="kicker">Halal Growth — SME banking, from the other side of the desk</div>
+    <h1>Why SME Loans Get Rejected in Pakistan — a Banker&rsquo;s Inside View</h1>
+
+    <p class="standfirst"><em>A good business. A full godown. And a file that couldn&rsquo;t speak for him.</em></p>
+
+    <p>A few years ago, a garments trader came to my office in Multan. Third generation in the business. His godown was full, his buyers in Karachi owed him money on time, every time, and his order book was better than it had been in years. He needed working capital to take a big order, and by every measure that matters on the ground, he deserved it.</p>
+
+    <p>His case was declined.</p>
+
+    <p>I wish I could say this was unusual. In over twenty-five years of SME banking, I have sat in that chair and given that answer to men and women whose businesses I genuinely believed in. And afterwards they always ask the same thing — sometimes politely, sometimes not:</p>
+
+    <p><em>&ldquo;At least tell me why.&rdquo;</em></p>
+
+    <p>The honest truth is that banks almost never do. A decline is delivered in one cold line, and the borrower is left guessing — was it the property? The balance sheet? Some grudge? Usually it was none of those. Because here is the thing nobody outside a bank understands: <strong>your business is not what gets approved. Your file does.</strong></p>
+
+    <p>The people who finally decide your case — the credit analyst, the committee — will mostly never meet you. They will never stand in your factory and hear the machines running, or see your shop so full at maghrib that customers are waiting outside. They get a file. Paper. Figures. A story told in documents. And when that story has holes in it, the answer is no — not because the business is bad, but because nobody in that room can stand up and defend the holes.</p>
+
+    <p>So let me tell you what actually kills these files. Not the bank&rsquo;s official language. The real reasons, in roughly the order I have watched them do the damage.</p>
+
+    <hr>
+
+    <h2>The sales are real — they just aren&rsquo;t anywhere on paper</h2>
+
+    <p>Picture the analyst opening your file. Your financial statements claim eighty million in sales. He turns to your bank statement, the one document in the file nobody can decorate, and counts the credits: twenty-five million came through the account in the whole year.</p>
+
+    <p>Where did the rest go? Cash, of course. Every banker knows it, every business does it. But knowing it and writing it in an appraisal are two different things. He cannot type <em>&ldquo;actual sales are higher, mostly in cash&rdquo;</em> and send that file upstairs. What reaches the committee is the gap — unexplained, undefended — and an unexplained gap in the very first numbers poisons everything after it.</p>
+
+    <p>This is the commonest death of all, and it happens to honest businesses. Your bank account <strong>is</strong> your financial statement; the bank will treat it as one whether you do or not. The traders who never face this problem are the unglamorous ones who, for a year or two before they ever apply, quietly push everything through the account — every sale, every recovery. Their turnover and their claims shake hands. Their files walk through.</p>
+
+    <h2>The tax return says one business, the application says another</h2>
+
+    <p>This one I find genuinely sad, because the wound is self-inflicted and the reasoning at the time even felt clever. To keep the tax bill small, the returns for years have shown a modest income — some years a loss. Then comes the day the business needs the bank, and out comes the real picture: healthy profits, comfortably able to carry the instalment.</p>
+
+    <p>Now the bank is holding two sworn versions of the same business. Guess which one it believes.</p>
+
+    <p>It believes the tax return. It has to. The bank&rsquo;s own framework — the State Bank&rsquo;s prudential rules under which every SME file is examined — requires documented, verifiable income. No credit officer on earth will write <em>&ldquo;the borrower assures us he earns far more than he declares to the FBR&rdquo;</em> in a proposal and sign his name under it. So your capacity is assessed on the income you swore to the tax authorities, the numbers don&rsquo;t carry the instalment, and the case dies.</p>
+
+    <p>And here is the cruel arithmetic: the tax those small returns saved, added up over years, is usually less than the value of the one financing that got declined.</p>
+
+    <p>If this is you, there is no shortcut — there is only the calendar. Decide which business you are, and start filing like it, a couple of cycles before you&rsquo;ll need the bank. Declared profit has a price. It is called tax. It is also, rupee for rupee, the cheapest credit history you will ever buy.</p>
+
+    <h2>&ldquo;But I have property worth ten crore!&rdquo;</h2>
+
+    <p>Every banker has heard this sentence, usually a little louder than the rest of the conversation. And every banker has given some version of the same answer: property is not what repays a loan. Cash repays a loan. Property is what the bank looks at when the cash has already failed.</p>
+
+    <p>Before your proposal is entertained, the analyst works out whether the business can actually service debt — not just the new instalment you&rsquo;re asking for, but everything: the running finance already drawn, the leasing on the vehicles, the facility in your brother&rsquo;s name that in practice your business pays for, all of it. He divides the cash your operations generate by the total of those obligations. Bankers call the result the debt-service coverage ratio, and when it comes out thin — when the business is producing barely a rupee of cash for every rupee it already owes in payments — the proposal is weak on its strongest day. One bad season, one delayed recovery from a big buyer, and a thin file becomes a defaulted file. Committees are paid to see that quarter coming.</p>
+
+    <p>I am not saying collateral doesn&rsquo;t matter; it matters enormously, as the bank&rsquo;s second line of defence. I am saying it has never once, in my experience, rescued a file whose cash flow failed the first question. Check your own coverage before a stranger does — there is a free <a href="../tools/">DSCR calculator on our tools page</a> that runs the same arithmetic an analyst will run, and it is better to be disappointed by a calculator than by a committee.</p>
+
+    <h2>The report you&rsquo;ve probably never seen, that speaks before you do</h2>
+
+    <p>Before your file is discussed in any serious way, the bank pulls your credit history from the State Bank&rsquo;s e-CIB system. Borrowers imagine this covers their loans at that one bank. It doesn&rsquo;t. It is your whole financial life in the banking system — every facility at every bank, your credit cards, the companies you direct, and the guarantees you have signed for other people.</p>
+
+    <p>Things in that report sink files quietly:</p>
+
+    <p>A small default from years ago — cleared, settled, forgotten by you. Not forgotten by the report. A settled default is far better than an open one, but it starts every conversation on the back foot. Or a pattern of returned cheques, which to a committee reads as a business living hand to mouth, whatever the innocent explanation was at the time. Or — very common — exposure spread across three banks, each of which thought it was your main banker, until e-CIB lines them all up in one column and the total looks frightening against your documented income. Or the guarantee you gave years ago for a relative&rsquo;s facility, long forgotten by you, currently overdue by him. His delay. Your report.</p>
+
+    <p>You cannot fix what you haven&rsquo;t read. Whatever is in your e-CIB, walk into the bank already knowing it, line by line, with an explanation ready for every mark. The borrower who explains his own report before the officer raises it is a different borrower in that room.</p>
+
+    <h2>The property is fine. The papers aren&rsquo;t.</h2>
+
+    <p>When a file survives the cash-flow question, it often dies in the legal department — and not, usually, over value. It dies over paper.</p>
+
+    <p>A title with a missing link somewhere in the chain of ownership. A sale that was never properly registered. A father&rsquo;s property, inherited in practice a decade ago, still in his name in the record because the family never got around to the transfer. A plot offered in a spouse&rsquo;s or brother&rsquo;s name, whose owner, when the moment comes, is not quite willing to sign. Or property already charged to another bank, where the sharing arrangement the proposal assumed turns out to be impossible to complete.</p>
+
+    <p>And value itself: owners carry a price in their head — the hopeful market price, the price a neighbour claims he got. The bank&rsquo;s approved valuer works from forced sale, and the facility is sized on his number. The gap between those two numbers has ended more negotiations than interest rates ever have.</p>
+
+    <p>Almost every title defect I have ever seen was curable. What none of them were was curable <em>quickly</em> — inside the few weeks a live application allows. This is pre-season work. Have a lawyer read your title the way a bank&rsquo;s lawyer will read it, a year before you need the money, while there is still time to fix what he finds.</p>
+
+    <h2>Sometimes it really isn&rsquo;t you</h2>
+
+    <p>I should be fair about this, because borrowers torture themselves over declines that were never about them. Banks run sector policies. Industries move in and out of favour — losses in a sector, pressure from the regulator, a turn in the economy — and a trade that was welcome in March can be effectively closed by November. Very young businesses, businesses hanging on a single buyer, businesses whose real activity doesn&rsquo;t match what&rsquo;s written on their registration: these face the same closed door whatever the file looks like.</p>
+
+    <p>The sad part is procedural. A branch under target pressure will happily accept your file and your documents and your weeks of running around — and the decline arrives from a committee applying a policy the branch never mentioned. Ask, before you invest in the file, and ask it bluntly: <em>&ldquo;Is my line of business open in your bank right now? Is a business of my size and my age eligible under your current SME policy?&rdquo;</em> Ask it at two or three banks, because appetite genuinely differs from bank to bank in the same month. And ask about the State Bank&rsquo;s refinance and special schemes for your sector — when a scheme stands behind a proposal, the bank&rsquo;s risk changes, and I have watched files that were hopeless as ordinary proposals sail through as scheme cases. (Working out which schemes you actually qualify for is a subject in itself; it&rsquo;s the subject of our eligibility guide.)</p>
+
+    <h2>And then there is the file that argues with itself</h2>
+
+    <p>Last, the quietest killer of all. The financial statements give one set of numbers. The tax return gives another. The bank statement gives a third. The stock statement doesn&rsquo;t match the insurance, and the projections calmly double next year&rsquo;s sales on the strength of nothing anyone can point to.</p>
+
+    <p>Nobody coordinated these documents, because nobody saw them as one argument. Each was made by a different person for a different purpose at a different time — and then they were all bound together and sent to a room full of professional sceptics.</p>
+
+    <p>Committees read contradictions as a character report. Not necessarily &ldquo;this man is dishonest&rdquo; — more often &ldquo;this man is careless,&rdquo; and carelessness with paper, in their experience, is carelessness with instalments waiting to happen. I have seen committees decline files they believed in, sincerely, because they knew the file would not survive the bank&rsquo;s own audit. <em>&ldquo;Audit will object&rdquo;</em> is, in a modern bank, a complete and final reason. It needs no explanation and accepts no appeal.</p>
+
+    <p>The remedy is almost embarrassingly simple: before the file leaves your hands, spread every document on one table and read them as a stranger — a hostile stranger. One story. One set of numbers. Everywhere. Where two papers honestly differ, attach the explanation yourself, in writing. Committees can forgive almost any weakness they are told about up front. What they never forgive is a surprise.</p>
+
+    <hr>
+
+    <h2>What that room is really deciding</h2>
+
+    <p>Strip the formats away and every credit decision I have been part of reduces to three questions.</p>
+
+    <p><em>Can this be repaid — out of the business&rsquo;s own cash, in an ordinary year, without miracles?</em> That is documented income and debt-service coverage.</p>
+
+    <p><em>If it can&rsquo;t, what do we actually hold?</em> That is the security — its papers, its ownership, its enforceable value.</p>
+
+    <p><em>And who are these people?</em> That is your conduct: the account, the e-CIB, and whether everything checkable in the file turned out to be true.</p>
+
+    <p>Every decline in this article is just one of those three questions, answered badly <strong>on paper</strong>. Which is, if you think about it, hopeful news — because paper is the one part of your business entirely within your control.</p>
+
+    <h2>If financing is a year or two away, start here</h2>
+
+    <p>None of this is the work of the month in which you suddenly need the money. It is the work of the year before:</p>
+
+    <ol class="checklist">
+      <li><span><strong>Push your sales through the bank account.</strong> All of them. Visible turnover is credibility.</span></li>
+      <li><span><strong>File tax returns for the business you actually run</strong> — and accept that the tax is the price of being believed later.</span></li>
+      <li><span><strong>Have three years of financial statements prepared</strong> from one consistent set of numbers.</span></li>
+      <li><span><strong>Keep the account clean:</strong> no returned cheques, no living permanently over the limit, no long sleep followed by a sudden application.</span></li>
+      <li><span><strong>Find out what your e-CIB says before a bank does.</strong> Settle the small overdues. Know whose guarantees are standing in your name.</span></li>
+      <li><span><strong>Get the collateral papers in order</strong> while there&rsquo;s no clock running — the transfers, the missing links, the originals.</span></li>
+      <li><span><strong>Ask for the amount your cash flow can carry,</strong> not the amount your plans can dream of. A modest facility, repaid cleanly for a year, is the finest application for a bigger one ever written.</span></li>
+      <li><span><strong>Choose the bank — and the scheme —</strong> as carefully as the bank chooses you.</span></li>
+    </ol>
+
+    <h2>The bottom line</h2>
+
+    <p>Banks do not reject businesses. They reject files. And files are usually rejected for reasons the owner built, unknowingly, over years — in his tax returns, in how his money moved, in papers nobody checked against each other. I have given that one cold line of an answer more times than I like to remember, and I can tell you that in the majority of cases it did not have to happen.</p>
+
+    <p>Start a year early. Make the paper tell the truth about the business — the whole truth, in every document, the same way. Then the meeting across the banker&rsquo;s desk is a different meeting, and it ends with a different sentence.</p>
+
+    <p><em>Before you apply anywhere, run the two tests on yourself: our free <strong>DSCR calculator</strong> measures whether your cash flow can carry a new instalment, and the <strong>financial ratios tool</strong> reads your business the way a bank&rsquo;s appraisal will. Both are on the <a href="../tools/">tools page</a>.</em></p>
+
+    <div class="callout">
+      <h3>Free tools</h3>
+      <p>Run the two tests a credit analyst will run — check your debt-service coverage and read your ratios the way a bank&rsquo;s appraisal does, before you apply anywhere.</p>
+      <a class="cta" href="../tools/">Open the free tools →</a>
+    </div>
+
+
+  </article>
+
+  <div class="disclaimer">
+    <strong>Please note:</strong> This article is educational content based on general banking practice. It is not a financing offer, a credit decision, or financial advice. Bank policies, State Bank regulations and scheme terms change over time — always confirm the current requirements with your bank before applying.
+  </div>
+
+  <footer>
+    <span>Halal Growth — Islamic finance for SME &amp; commercial banking, by Irshad Ahmad Khan, Unit Head – SME Banking, Multan.</span>
+    <span><a href="../">Home</a> · <a href="../tools/">Tools</a> · Contact: halalgrowth.iak@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>
