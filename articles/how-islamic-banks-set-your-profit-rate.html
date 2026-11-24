@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>How Islamic Banks Set Your Profit Rate | Halal Growth</title>
+<meta name="description" content="A trader was quoted one-year KIBOR plus two percent and did not know what KIBOR was. A banker’s plain guide to how Islamic banks set your profit rate, why they use an interest benchmark, and why the same 14.85% costs Rs 331,247 more as a Murabaha than as a conventional loan." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F4EF;
+  --surface:#FFFFFF;
+  --surface-2:#EDF2EE;
+  --surface-3:#E6EDE8;
+  --ink:#14211B;
+  --ink-2:#2E4238;
+  --muted:#5E7268;
+  --line:#D9E0D8;
+  --emerald:#0B4A33;
+  --emerald-2:#117A55;
+  --emerald-dark:#072E20;
+  --gold:#B7892E;
+  --gold-2:#8A6518;
+  --gold-bg:#FBF3D9;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(11,74,51,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0D1411;
+    --surface:#16211B;
+    --surface-2:#1B2A22;
+    --surface-3:#22352B;
+    --ink:#EDF3EF;
+    --ink-2:#C9D8CE;
+    --muted:#9DB0A4;
+    --line:#2B3F34;
+    --emerald:#35C48D;
+    --emerald-2:#4ED3A3;
+    --emerald-dark:#0B2E21;
+    --gold:#E2B44A;
+    --gold-2:#E2B44A;
+    --gold-bg:#2E2A12;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--emerald);text-decoration-color:color-mix(in srgb, var(--emerald) 40%, transparent);text-underline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px 56px}
+
+/* Top strip */
+.topstrip{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.mark{width:44px;height:44px;border-radius:11px;background:var(--emerald);color:#fff;display:grid;place-items:center;font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:19px;letter-spacing:.02em;flex:none}
+@media (prefers-color-scheme: dark){.mark{color:#072E20}}
+.brand b{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink)}
+.brand span{display:block;font-size:12.5px;color:var(--muted);letter-spacing:0;text-transform:none;font-weight:400}
+.top-link{font-size:13.5px;font-weight:600;border:1px solid var(--line);background:var(--surface);padding:9px 14px;border-radius:999px;text-decoration:none;color:var(--ink)}
+.top-link:hover{border-color:var(--emerald)}
+
+/* Article */
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold-2)}
+.article{max-width:760px;margin:34px auto 0}
+.article h1{font-family:"Newsreader",Georgia,serif;font-size:40px;line-height:1.12;letter-spacing:-.02em;margin:10px 0 22px;font-weight:700}
+.article .standfirst{font-family:"Newsreader",Georgia,serif;font-style:italic;font-size:22px;line-height:1.45;color:var(--ink-2);margin:0 0 26px;padding-left:18px;border-left:3px solid var(--gold)}
+.article p{font-size:16.5px;line-height:1.8;color:var(--ink-2);margin:0 0 20px}
+.article strong{color:var(--ink)}
+.article h2{font-family:"Newsreader",Georgia,serif;font-size:28px;line-height:1.2;letter-spacing:-.01em;margin:38px 0 14px;color:var(--ink)}
+.article h3{font-size:19px;line-height:1.35;font-weight:700;margin:30px 0 10px;color:var(--ink)}
+.article hr{border:0;height:1px;background:var(--line);margin:34px 0}
+.article ul{margin:0 0 20px;padding-left:22px}
+.article li{font-size:16.5px;line-height:1.75;color:var(--ink-2);margin-bottom:8px}
+.article li strong{color:var(--ink)}
+
+/* Comparison table */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:24px 0 26px;background:var(--surface);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;background:var(--surface-2);padding:12px 14px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td{padding:12px 14px;border-top:1px solid var(--line);font-family:"IBM Plex Mono",monospace;color:var(--ink-2)}
+td:first-child{font-family:"IBM Plex Sans",sans-serif;font-weight:600;color:var(--ink)}
+th.num, td.num{text-align:right}
+
+/* Checklist */
+.checklist{list-style:none;margin:6px 0 26px;padding:0;display:grid;gap:12px;counter-reset:q}
+.checklist li{display:flex;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;font-size:15.5px;line-height:1.7;color:var(--ink-2);margin:0}
+.checklist li::before{counter-increment:q;content:counter(q);width:26px;height:26px;flex:none;border-radius:50%;background:var(--emerald);color:#fff;display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:700;margin-top:3px}
+@media (prefers-color-scheme: dark){.checklist li::before{color:#072E20}}
+.checklist li strong{color:var(--ink)}
+
+/* Calculator callout */
+.callout{background:var(--emerald-dark);color:#EAF6EF;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin:30px 0 8px}
+.callout h3{margin:0 0 6px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E9C86B;font-family:"IBM Plex Sans",sans-serif;font-weight:700}
+.callout p{margin:0 0 16px;font-size:15px;color:#CDE8D8;line-height:1.65}
+.callout .cta{display:inline-block;background:#E9C86B;color:#072E20;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;text-decoration:none}
+.callout .cta:hover{filter:brightness(1.05)}
+
+/* Disclaimer + footer */
+.disclaimer{background:var(--gold-bg);border:1px solid color-mix(in srgb, var(--gold) 28%, var(--line));border-radius:14px;padding:18px 20px;font-size:13.5px;color:var(--ink-2);line-height:1.65;max-width:760px;margin:34px auto 0}
+.disclaimer strong{color:var(--gold-2)}
+footer{margin:28px auto 0;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13px;max-width:760px}
+@media (max-width:620px){
+  .wrap{padding:0 14px 44px}
+  .article h1{font-size:31px}
+  .article .standfirst{font-size:19px}
+  .article p,.article li{font-size:15.5px}
+  .checklist li{font-size:14.5px;padding:15px}
+  table{font-size:12.5px}
+  th,td{padding:10px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topstrip">
+    <a class="brand" href="../" aria-label="Halal Growth — home">
+      <div class="mark" aria-hidden="true">HG</div>
+      <div><b>Halal Growth</b><span>By Irshad Ahmad Khan — SME &amp; Islamic Banking</span></div>
+    </a>
+    <a class="top-link" href="../tools/">Tools</a>
+  </div>
+
+  <article class="article">
+    <div class="kicker">Halal Growth: SME banking, from the other side of the desk</div>
+    <h1>How Islamic Banks Set Your Profit Rate</h1>
+
+    <p class="standfirst"><em>They keep saying KIBOR. What is KIBOR? And if this is an Islamic bank, why is my profit rate built on something that sounds exactly like interest?</em></p>
+
+    <p>A trader I know walked into an Islamic bank last month for stock financing. The officer was polite, the paperwork was familiar, and then came the sentence that stopped him cold.</p>
+
+    <p>"Your profit rate will be one-year KIBOR plus two percent."</p>
+
+    <p>He nodded, the way you nod when you do not want to look like you missed something. Outside, in his car, he rang me.</p>
+
+    <p>"They keep saying KIBOR. What is KIBOR? And if this is an Islamic bank, why is my profit rate built on something that sounds exactly like interest?"</p>
+
+    <p>It is the best question in Islamic banking, and it is the one almost nobody inside a bank takes the time to answer properly. So let me answer it the way I would have answered it across my own desk, in 28+ years of SME banking, because the answer decides how much you will actually pay, and most borrowers sign it without ever understanding it.</p>
+
+    <hr>
+
+    <h2>First, what KIBOR actually is</h2>
+
+    <p>KIBOR stands for the Karachi Interbank Offered Rate. It is the rate at which banks in Pakistan lend money to each other, for periods from a week to a year. Every working day the State Bank publishes it on its own website, for each tenor, as a bid and an offer.</p>
+
+    <p>On 23 November 2026, the day I checked for this article, the State Bank's page showed one-year KIBOR at 12.85 percent on the offer side, six-month KIBOR at 12.48 percent, and three-month KIBOR at 12.31 percent. The bids sat a little lower, 12.35, 12.23 and 12.06 percent. These are not rates any bank invented. They are the market's own reading of what money costs between banks, on that day.</p>
+
+    <p>Above KIBOR sits the State Bank's policy rate, which is the rate the State Bank itself sets. The Monetary Policy Committee raised it by half a percentage point to 12 percent with effect from 27 October 2026. When the policy rate moves, KIBOR follows it, usually within days, and when KIBOR moves, every financing priced off it moves too. That chain, from the State Bank's committee room to your monthly instalment, is the whole subject of this article.</p>
+
+    <hr>
+
+    <h2>Why an Islamic bank uses an interest benchmark at all</h2>
+
+    <p>Here is the honest answer, and it is not the one you will find in a brochure.</p>
+
+    <p>An Islamic bank does not charge you interest. When it finances your stock through Murabaha, it buys the goods and sells them to you at a higher, agreed price, and your instalments repay that price. When it finances your shop through Diminishing Musharakah, it buys the property with you and charges you rent on its share while you buy that share back, unit by unit. The contract is a sale, or a lease, or a partnership. No interest changes hands.</p>
+
+    <p>But the bank still has to decide what price to put on that sale, or what rent to charge on that lease. It needs a number, and the only numbers the market produces every day are interest rates. So the bank uses KIBOR as a measuring stick. It looks at the rate, and it uses it to work out the profit on a Shariah-compliant contract. The benchmark is the ruler, not the transaction.</p>
+
+    <p>Is that allowed? The scholars who built Islamic banking in Pakistan said yes, a long time ago. After the Supreme Court's decision on the Islamisation of the economy in 2002, Shariah scholars permitted Islamic banks to use the prevailing rates as a benchmark for pricing, because no Shariah-compliant alternative existed. The permission was practical, not theological. It said, in effect: use the number to measure with, but keep the contract itself free of interest.</p>
+
+    <p>There was an attempt to build a genuinely Islamic alternative. In November 2011, Thomson Reuters launched the Islamic Interbank Benchmark Rate, the IIBR, an average of the expected return on Shariah-compliant short-term funding, contributed by Islamic banks around the world. It was a serious effort, overseen by a Shariah committee. But it was built on US dollar funding, and in Pakistan it never took hold. To this day, both conventional and Islamic banks in this country price their products off KIBOR. If you are waiting for a purely Islamic benchmark to appear on your offer letter, you will be waiting a long time.</p>
+
+    <p>That is the position as it stands, and I am not going to dress it up. Some customers are comfortable with it, some are not, and both reactions are honest. What I can tell you is what it means for your pocket, because that is where the benchmark stops being a scholarly debate and starts being money.</p>
+
+    <hr>
+
+    <h2>The formula is simpler than the words around it</h2>
+
+    <p>Strip away the terminology and your profit rate is built from two parts.</p>
+
+    <p>The first part is the benchmark, almost always KIBOR. The second part is the spread, the bank's own margin, added on top. Your rate is the benchmark plus the spread, and the spread is where the bank prices you: your risk, the size of the facility, the tenor, the security you offer, how long you have banked with them, and how badly they want your business that quarter.</p>
+
+    <p>So when my friend was quoted "one-year KIBOR plus two percent," the arithmetic underneath was simple. One-year KIBOR on the day was 12.85 percent. Add the two percent spread, and his profit rate was 14.85 percent. If KIBOR had been quoted on a different day, the rate would have been different. If another customer with a weaker file had been sitting in that chair, the spread might have been three percent instead of two, and the rate 15.85 percent, on the same goods, on the same day.</p>
+
+    <p>Two things follow from this that most borrowers never get told. First, the benchmark is public and you can check it yourself, on the State Bank's website, on the morning you sign. Second, the spread is the negotiable part. The benchmark belongs to the market. The spread belongs to the conversation between you and your banker, and it is the only part of the rate you can argue about.</p>
+
+    <hr>
+    <h2>How the rate works inside each product</h2>
+
+    <p>The same benchmark behaves differently depending on which Islamic contract you sign, and this is where people get caught out.</p>
+
+    <p>In a Murabaha, the profit is fixed at the start. The bank looks at KIBOR on the day of the contract, adds its spread, works out the total profit on the cost of the goods, and writes that total into the sale price. From that day on, the price does not change. If KIBOR falls by two points the next month, your instalments stay exactly where they were. If KIBOR rises, they stay where they were too. You have bought certainty, and the price of certainty is that you cannot benefit when rates fall.</p>
+
+    <p>In Diminishing Musharakah and Ijarah, the rent is usually reviewed at intervals agreed in the contract, often once a year. The bank's share of the rent is recalculated against the benchmark on each review date. So if KIBOR rises between reviews, your rent rises at the next review. If it falls, your rent falls. The buy-out schedule, the units of the bank's share you purchase each month, is fixed, but the rental part of your payment floats with the market.</p>
+
+    <p>In Running Musharakah, the working capital facility most traders actually use, the bank shares in the profit of your business at an agreed ratio, and KIBOR is used only as an indicative, expected rate when the facility is priced. The actual profit share is settled on real results, which is why this product feels different to borrowers, and why its pricing is harder to compare with a conventional running finance line.</p>
+
+    <p>The point is simple. "KIBOR plus two" is not one thing. It is a fixed price in a Murabaha, a moving rent in a Musharakah, and an indication in a Running Musharakah. Ask which one you are signing, and ask on what date the benchmark is read, and how often it is re-read. Those three answers are worth more than the headline rate.</p>
+
+    <hr>
+
+    <h2>The worked example: what 14.85 percent really costs</h2>
+
+    <p>Let me put real numbers on it, because a rate without numbers is just a rumour.</p>
+
+    <p>Say you need five million rupees of stock financing for one year, through Murabaha. The bank quotes one-year KIBOR plus a two percent spread. On 23 November 2026, one-year KIBOR on the offer side was 12.85 percent, so your profit rate is 14.85 percent. The two percent spread in this example is mine, chosen to keep the arithmetic clear, not a rate any bank has quoted. Your bank's actual spread will be its own.</p>
+
+    <p>The bank buys the stock for five million rupees. Its profit is 14.85 percent of that cost, which is 742,500 rupees. The total price you agree to pay is 5,742,500 rupees, and over twelve months your instalment is 478,542 rupees a month.</p>
+
+    <p>Now compare that with a conventional loan of the same five million, at the same 14.85 percent, repaid over the same twelve months. The conventional loan charges its rate on the reducing balance, the amount you still owe, which falls with every payment. Its monthly instalment is 450,938 rupees, its total interest is 411,253 rupees, and the total you repay is 5,411,253 rupees.</p>
+
+    <p>Same headline rate, same amount, same twelve months, and the Murabaha costs you 331,247 rupees more.</p>
+
+    <p>That is not a trick, and it is not a hidden charge. It is the arithmetic of the two contracts. In a Murabaha, the profit is charged on the full original cost for the whole year, because you agreed a sale price on day one. In a conventional loan, the charge falls as the balance falls. This is the same difference I worked through in our earlier article comparing Murabaha with a conventional loan, and it is the single most misunderstood fact in Islamic financing. Borrowers compare the headline rates and conclude the products cost the same. They do not. They never have.</p>
+
+    <p>So when you are offered a profit rate, do not ask only what the rate is. Ask what the total price is, and what the monthly instalment is, and compare those totals with the conventional alternative. The rate is a rumour. The total is the truth.</p>
+
+    <hr>
+
+    <h2>What can go wrong</h2>
+
+    <p>Most of what goes wrong with a profit rate is not anyone's dishonesty. It is a misunderstanding, signed in a hurry.</p>
+
+    <p>The commonest is the reset. You take a Diminishing Musharakah when KIBOR is low, your rent is comfortable, and a year later the benchmark has risen by a point or two. Your rent rises with it, and on five million rupees a single point is 50,000 rupees a year, which is real money to a small business. Nobody warned you, because nobody told you the rent was floating. Before you sign a Musharakah or an Ijarah, ask the officer to show you, in rupees, what your payment becomes if the benchmark rises by one point, and by two. A good officer will do it on the spot. If he cannot, that tells you something too.</p>
+
+    <p>The second is comparing unlike numbers. A conventional bank quotes you an annual rate on a reducing balance. An Islamic bank quotes you a profit rate on a Murabaha. The numbers look similar, the products are not, and the totals differ by lakhs, as the example above shows. Compare totals, not rates.</p>
+
+    <p>The third is the tenor of the benchmark. One-year KIBOR and three-month KIBOR are different numbers. On 23 November 2026, one-year KIBOR was 12.85 percent and three-month KIBOR was 12.31 percent, a gap of more than half a point. An offer letter that says only "KIBOR plus two" without saying which KIBOR has left the most important word out. Ask which tenor, and ask what happens at each reset date.</p>
+
+    <p>The fourth is fixing at the wrong time. A Murabaha locks your profit rate on the day you sign. If the State Bank cuts its policy rate a month later, and KIBOR falls with it, your neighbour's new Murabaha is cheaper than yours and yours cannot move. That is the bargain you made for certainty. It is a fair bargain, but only if you knew you were making it.</p>
+
+    <p>And the last is the spread itself. Two customers can sit in the same bank, on the same day, for the same goods, and be quoted spreads a full point apart, because one has a clean account, documented income and good security, and the other does not. The spread is the bank's judgement of you, priced in percentage points. The cheapest way to lower your profit rate is not to haggle over KIBOR, which nobody can haggle over. It is to arrive with the file that earns a thinner spread, which is the subject of our earlier article on why SME loans get rejected.</p>
+
+    <hr>
+    <h2>Before you sign, ask these</h2>
+
+    <ol class="checklist">
+      <li><span><strong>Which KIBOR tenor is my rate built on</strong>, three-month, six-month or one-year, and on what date is it read?</span></li>
+      <li><span><strong>Is my profit rate fixed for the whole tenor, or reviewed</strong>, and if reviewed, how often and on what date?</span></li>
+      <li><span><strong>What is the total price I will pay, and the monthly instalment</strong>, in rupees, not just the rate?</span></li>
+      <li><span><strong>If the benchmark rises by one point at the next review, what does my payment become</strong>, in rupees?</span></li>
+      <li><span><strong>What is the spread, and what would I need to show the bank to earn a thinner one?</strong></span></li>
+    </ol>
+
+    <p>Five questions, none of them rude, all of them answerable in two minutes. If the officer answers them plainly, you are in good hands. If he waves them away, you have learned something worth knowing before you signed.</p>
+
+    <h2>The bottom line</h2>
+
+    <p>Your profit rate is not a mystery, and it is not a favour. It is a public benchmark plus a bank's margin, applied through a contract that is a sale, a lease or a partnership rather than a loan. KIBOR is the ruler the whole market uses, Islamic banks included, because no Shariah-compliant alternative has taken hold in Pakistan. The benchmark you cannot negotiate. The spread you can, and the contract you choose decides whether the rate stays still or moves with the market.</p>
+
+    <p>So read the offer letter the way you would read a sale agreement, because that is what it is. Check the benchmark on the State Bank's website on the day you sign. Ask for the total price in rupees. And remember that two products with the same headline rate can cost you three lakh rupees apart, which is a difference no borrower can afford to discover after signing.</p>
+
+    <p><em>Before you apply anywhere, run the two tests on yourself: our free <strong>DSCR calculator</strong> measures whether your cash flow can carry a new instalment, and the <strong>financial ratios tool</strong> reads your business the way a bank's appraisal will. Both are on the tools page.</em></p>
+
+    <p>The tools page is here:</p>
+    <p><a href="../tools/">https://irshadakhan-halalgrowth.github.io/tools/</a></p>
+
+    <div class="callout">
+      <h3>Free tools</h3>
+      <p>Run the two tests before you sign: check whether your cash flow can carry the instalment, and read your ratios the way a bank's appraisal will.</p>
+      <a class="cta" href="../tools/">Open the free tools →</a>
+    </div>
+
+    <p>If you are comparing a Murabaha quote with a conventional offer, the appraisal method behind this guide, the ratios, the file checks and the questions a committee asks, is set out in full in my <a href="https://irshadakhan92.gumroad.com/l/mjdmji" target="_blank" rel="noopener">SME Credit Analysis &amp; Appraisal Toolkit</a> on Gumroad.</p>
+
+    <p><em>Rates and rules in this article are as published on 24 November 2026. KIBOR moves every working day and bank spreads are set case by case, so confirm the current benchmark and your own offer with your bank before acting. This article explains how the pricing works. It is not a recommendation to take any particular facility.</em></p>
+
+  </article>
+
+  <div class="disclaimer">
+    <strong>Please note:</strong> This article is educational content based on general banking practice. It is not a financing offer, a credit decision, or financial advice. Bank policies, State Bank regulations and scheme terms change over time, always confirm the current requirements with your bank before applying.
+  </div>
+
+  <footer>
+    <span>Halal Growth — Islamic finance for SME &amp; commercial banking, by Irshad Ahmad Khan, Senior SME and Commercial Banking.</span>
+    <span><a href="../">Home</a> · <a href="../tools/">Tools</a> · Contact: halalgrowth.iak@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>
